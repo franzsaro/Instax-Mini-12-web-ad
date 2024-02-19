@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instax Mini 12 Web Ad</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div><img class="logo" src="/logo-removebg-preview.png" alt="Instax_logo"></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#cameraColors">Cameras</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#accessories">Accessories</a></li>
+                <li><a href="#films">Films</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"><img class="logo" src="/logo-removebg-preview.png" alt="Instax_logo"></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#cameraColors" onclick="toggleMenu()">Cameras</a></li>
+                <li><a href="#features" onclick="toggleMenu()">Features</a></li>
+                <li><a href="#accessories" onclick="toggleMenu()">Accessories</a></li>
+                <li><a href="#films" onclick="toggleMenu()">Films</a></li>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
