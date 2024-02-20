@@ -12,7 +12,11 @@
     }
 
     .logo {
-        height: 2.5rem;
-        width: 5rem;
+        min-height: 2.5rem;
+        min-width: 5rem;
+    }
+
+    #product-view {
+        height: 60vh;
     }
 }
