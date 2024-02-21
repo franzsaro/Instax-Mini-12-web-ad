@@ -76,6 +76,19 @@ a:hover::after {
     background-size: cover;
 }
 
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 /* Hamburger Menu styles */
 
 #hamburger-nav {
@@ -179,65 +192,88 @@ section {
 /* Product slider */
 
 #product-slider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30vh;
-    position: absolute;
-    min-width: 50vh;
-    flex-wrap: wrap;
+    padding-top: 20vh;
 }
 
 .camera-line-up {
     display: flex;
+    justify-content: center;
+    flex-direction: row;
     position: relative;
-    height: 40vh;
+    padding: 50px;
 }
 
-/* .camera.black {
-     transform: translateX(-10rem) translateY(-42px); 
-}*/
+.camera {
+    position: absolute;
+    margin-top: 30vh;
+    height: 20rem;
+    left: 0;
+}
+
+.camera:nth-child(2) {
+    transition-delay: 200ms;
+}
+.camera:nth-child(3) {
+    transition-delay: 400ms;
+}
+.camera:nth-child(4) {
+    transition-delay: 600ms;
+}
+.camera:nth-child(5) {
+    transition-delay: 800ms;
+}
+.camera:nth-child(6) {
+    transition-delay: 1000ms;
+}
+.camera:nth-child(7) {
+    transition-delay: 1200ms;
+}
+
+.camera.black {
+    margin-left: -3rem;
+    top: 1rem;
+    height: 22rem;
+    
+}
 
 .camera.white {
-    height: 64vh;
-    position: relative;
-    right: 40vh;
-    top: -12vh;
+    height: 35rem;
+    top: -5.5rem;
+    margin-left: 40px;
 }
 
 .camera.turquoise {
-    position: relative;
-    right: 74vh;
-    height: 43vh;
-    top: -1vh;
+    height: 22.5rem;
+    top: 0.6rem;
+    margin-left: 16.5rem;
 }
 
 .camera.pink {
-    position: relative;
-    right: 98vh;
-    height: 45vh;
-    top: -2vh;
+    margin-left: 25rem;
+    top: -2px;
+    height: 23.7rem;
+    z-index: 1;
 }
 
 .camera.yellow {
-    position: relative;
-    right: 131vh;
-    height: 47vh;
-    top: -3vh;
+    top: -4px;
+    height: 24rem;
+    margin-left: 30rem;
+    z-index: 1;
 }
 
 .camera.purple {
-    position: relative;
-    right: 174vh;
-    height: 45vh;
-    top: -2vh;
+    top: 3px;
+    margin-left: 39rem;
+    height: 23rem;
+    z-index: 1;
 }
 
 .camera.red {
-    position: relative;
-    right: 208vh;
-    height: 48vh;
-    top: -3vh;
+    height: 25rem;
+    margin-left: 52rem;
+    z-index: 1;
+    top: -11px;
 }
 
 
