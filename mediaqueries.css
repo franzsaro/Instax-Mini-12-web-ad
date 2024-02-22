@@ -1,4 +1,5 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px),
+        screen and (max-height: 700px) {
     #desktop-nav {
         display: none;
     }
@@ -20,26 +21,21 @@
         min-width: 5rem;
     }
 
-    #product-view img{
-        height: 60vh;
-        width: 100vw;
+    .product-picture img{
+        height: 400px;
     }
+
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px),
+        screen and (max-height: 400px) {
     .menu-links a {
         font-size: 1rem;
     }
 
-    #product-view img {
-        height: 40vh;
-        width: 35vh;
-    }
-
-    #product-view {
-        height: 40vh;
-        margin-bottom: 40vh;
+    .product-picture img {
+        height: 300px;
     }
 
     #product-slider {
@@ -54,5 +50,27 @@
 
     .instax-message {
         font-size: 2rem;
+    }
+
+    .camera-turn-arounds {
+        height: 15rem;
+    }
+
+    .camera-turn-arounds h2 {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    .cameras-container {
+        grid-template-columns: 10rem 10rem;
+        grid-template-rows: 15rem 15rem;
+    }
+
+    .camera-image-container img.camera-turn {
+        transition: none;
+    }
+
+    .camera-image-container:hover img.camera-turn {
+        opacity: 0;
     }
 }
