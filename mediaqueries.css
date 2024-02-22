@@ -33,7 +33,8 @@
     }
 
     #product-view img {
-        height: 50vh;
+        height: 40vh;
+        width: 35vh;
     }
 
     #product-view {
