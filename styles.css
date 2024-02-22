@@ -192,88 +192,62 @@ section {
 /* Product slider */
 
 #product-slider {
-    padding-top: 20vh;
-}
-
-.camera-line-up {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    position: relative;
-    padding: 50px;
-}
-
-.camera {
-    position: absolute;
-    margin-top: 30vh;
-    height: 20rem;
-    left: 0;
+    margin-top: 20vh;
 }
 
 .camera:nth-child(2) {
     transition-delay: 200ms;
 }
 .camera:nth-child(3) {
-    transition-delay: 400ms;
+    transition-delay: 300ms;
 }
 .camera:nth-child(4) {
-    transition-delay: 600ms;
+    transition-delay: 400ms;
 }
 .camera:nth-child(5) {
-    transition-delay: 800ms;
+    transition-delay: 500ms;
 }
 .camera:nth-child(6) {
-    transition-delay: 1000ms;
+    transition-delay: 600ms;
 }
 .camera:nth-child(7) {
-    transition-delay: 1200ms;
+    transition-delay: 700ms;
+}
+.camera:last-child {
+    transition-delay: 800ms;
 }
 
-.camera.black {
-    margin-left: -3rem;
-    top: 1rem;
-    height: 22rem;
-    
+.camera-line-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.camera {
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
 }
 
 .camera.white {
-    height: 35rem;
-    top: -5.5rem;
-    margin-left: 40px;
+    margin-left: -1px;
 }
 
 .camera.turquoise {
-    height: 22.5rem;
-    top: 0.6rem;
-    margin-left: 16.5rem;
+    margin-left: -1px;
 }
 
 .camera.pink {
-    margin-left: 25rem;
-    top: -2px;
-    height: 23.7rem;
-    z-index: 1;
+    margin-left: -1px;
 }
 
 .camera.yellow {
-    top: -4px;
-    height: 24rem;
-    margin-left: 30rem;
-    z-index: 1;
-}
-
-.camera.purple {
-    top: 3px;
-    margin-left: 39rem;
-    height: 23rem;
-    z-index: 1;
+    margin-left: -1px
 }
 
 .camera.red {
-    height: 25rem;
-    margin-left: 52rem;
-    z-index: 1;
-    top: -11px;
+    margin-left: -1px;
 }
 
 
