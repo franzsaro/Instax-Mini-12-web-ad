@@ -11,20 +11,47 @@
         content: none;
     }
 
+    .menu-links a {
+        font-size: 2rem;
+    }
+
     .logo {
         min-height: 2.5rem;
         min-width: 5rem;
     }
 
-    #product-view {
+    #product-view img{
         height: 60vh;
+        width: 100vw;
     }
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
+    .menu-links a {
+        font-size: 1rem;
+    }
+
+    #product-view img {
+        height: 50vh;
+    }
+
+    #product-view {
+        height: 40vh;
+        margin-bottom: 40vh;
+    }
+
+    #product-slider {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
     .camera {
         height: 100px;
         width: 100px;
+    }
+
+    .instax-message {
+        font-size: 2rem;
     }
 }
