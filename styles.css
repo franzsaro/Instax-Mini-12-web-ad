@@ -174,6 +174,7 @@ a:hover::after {
 
 section {
     padding-top: 4vh;
+    padding-bottom: 10vh;
     height: auto;
     margin: 0 10rem;
     box-sizing: border-box;
@@ -331,9 +332,27 @@ section {
 #specification {
     margin-left: 0;
     margin-right: 0;
-    margin-top: 10vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.instructions-mobile {
+    display: none;
+}
+
+.instructions.hidden {
+    transform: translateY(-100%);
+    transition-delay: 600ms;
+    opacity: 0;
+    filter: blur(5px);
+}
+
+.instructions.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
 }
 
 .specification-container {
@@ -352,6 +371,7 @@ section {
     top: 10%;  
     padding: 15px;
     opacity: 0;
+    z-index: 1;
 }
 
 .btn-specification button:nth-child(2) {
@@ -359,6 +379,7 @@ section {
     top: 22%;
     padding: 15px;
     opacity: 0;
+    z-index: 1;
 }
 
 .btn-specification button:nth-child(3) {
@@ -366,6 +387,7 @@ section {
     top: 41%;
     padding: 15px;
     opacity: 0;
+    z-index: 1;
 }
 
 .btn-specification button:nth-child(4) {
@@ -373,6 +395,7 @@ section {
     left: 94%;
     padding: 15px;
     opacity: 0;
+    z-index: 1;
 }
 
 .btn-specification button:nth-child(5) {
@@ -381,6 +404,7 @@ section {
     left: 94%;
     padding: 15px;
     opacity: 0;
+    z-index: 1;
 }
 
 .btn-specification button:nth-child(6) {
@@ -389,6 +413,7 @@ section {
     left: 94%;
     padding: 15px;
     opacity: 0;
+    z-index: 1;
 }
 
 .btn-specification button:nth-child(7) {
@@ -397,6 +422,7 @@ section {
     left: 94%;
     padding: 15px;
     opacity: 0;
+    z-index: 1;
 }
 
 .btn-specification button:nth-child(8) {
@@ -405,10 +431,16 @@ section {
     left: 94%;
     padding: 15px;
     opacity: 0;
+    z-index: 1;
 }
 
 .btn-specification button:hover {
     cursor: pointer;
+}
+
+.info-container {
+    position: relative;
+    z-index: 2;
 }
 
 #first-info, 
@@ -423,12 +455,10 @@ section {
     text-align: center;
     flex-direction: row;
     background-color: white;
-    transition: background-color 300ms ease-in-out;
 }
 
 .spec-info {
     height: 100%;
-    transition: all 300ms ease-in-out;
 }
 
 .spec-info img{
@@ -442,7 +472,6 @@ section {
     height: 24px;
     width: 30px;
     cursor: pointer;
-    transition: all 100ms ease-in-out;
 }
 
 .specification-exit span{
