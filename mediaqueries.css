@@ -12,7 +12,7 @@
     }
 
     .menu-links a {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .logo {
@@ -24,11 +24,13 @@
         height: 400px;
     }
 
+    .image-container {
+        height: 400px;
+    }
 
 }
 
-@media screen and (max-width: 800px),
-        screen and (max-height: 400px) {
+@media screen and (max-width: 800px) {
     .menu-links a {
         font-size: 1rem;
     }
@@ -71,5 +73,16 @@
 
     .camera-image-container:hover img.camera-turn {
         opacity: 0;
+    }
+
+    #specification {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .specification-container {
+        background-image: url("./assets/Pink.png");
+        height: 300px;
+        width: 290px;
     }
 }

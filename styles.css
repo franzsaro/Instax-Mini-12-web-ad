@@ -174,7 +174,7 @@ a:hover::after {
 
 section {
     padding-top: 4vh;
-    height: 100vh;
+    height: auto;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -324,6 +324,143 @@ section {
     cursor: pointer;
     animation: background-change 2s infinite;
     color: rgb(231, 228, 228);
+}
+
+/* Specification Part */
+
+#specification {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.specification-container {
+    position: relative;
+    background-image: url("./assets/specifications.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 580px;
+}
+
+
+.btn-specification button:first-child {
+    position: absolute;
+    top: 10%;  
+    padding: 15px;
+    opacity: 0;
+}
+
+.btn-specification button:nth-child(2) {
+    position: absolute;
+    top: 22%;
+    padding: 15px;
+    opacity: 0;
+}
+
+.btn-specification button:nth-child(3) {
+    position: absolute;
+    top: 41%;
+    padding: 15px;
+    opacity: 0;
+}
+
+.btn-specification button:nth-child(4) {
+    position: absolute;
+    left: 94%;
+    padding: 15px;
+    opacity: 0;
+}
+
+.btn-specification button:nth-child(5) {
+    position: absolute;
+    top: 18%;
+    left: 94%;
+    padding: 15px;
+    opacity: 0;
+}
+
+.btn-specification button:nth-child(6) {
+    position: absolute;
+    top: 34%;
+    left: 94%;
+    padding: 15px;
+    opacity: 0;
+}
+
+.btn-specification button:nth-child(7) {
+    position: absolute;
+    top: 63%;
+    left: 94%;
+    padding: 15px;
+    opacity: 0;
+}
+
+.btn-specification button:nth-child(8) {
+    position: absolute;
+    top: 75%;
+    left: 94%;
+    padding: 15px;
+    opacity: 0;
+}
+
+.btn-specification button:hover {
+    cursor: pointer;
+}
+
+#first-info, 
+#second-info, 
+#third-info, 
+#fourth-info, 
+#fifth-info, 
+#sixth-info,
+#seventh-info,
+#eigth-info {
+    display: none;
+    text-align: center;
+    flex-direction: row;
+    background-color: white;
+    transition: background-color 300ms ease-in-out;
+}
+
+.spec-info {
+    height: 100%;
+    transition: all 300ms ease-in-out;
+}
+
+.spec-info img{
+    width: 40%;
+}
+
+.specification-exit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+}
+
+.specification-exit span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.specification-exit span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.specification-exit span:nth-child(2) {
+    opacity: 0;
+}
+
+.specification-exit span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
 }
 
 

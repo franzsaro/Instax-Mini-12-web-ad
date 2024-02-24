@@ -14,7 +14,7 @@
         <div>
             <ul class="nav-links">
                 <li><a href="#product-slider">Camera Colors</a></li>
-                <li><a href="#features">Features</a></li>
+                <li><a href="#specification">Specifications</a></li>
                 <li><a href="#accessories">Accessories</a></li>
                 <li><a href="#films">Films</a></li>
             </ul>
@@ -30,7 +30,7 @@
             </div>
             <div class="menu-links">
                 <li><a href="#product-slider" onclick="toggleMenu()">Camera Colors</a></li>
-                <li><a href="#features" onclick="toggleMenu()">Features</a></li>
+                <li><a href="#specification" onclick="toggleMenu()">Specifications</a></li>
                 <li><a href="#accessories" onclick="toggleMenu()">Accessories</a></li>
                 <li><a href="#films" onclick="toggleMenu()">Films</a></li>
             </div>
@@ -144,6 +144,113 @@
                     <button class="btn btn-color" onclick="location.href='https://github.com/franzsaro/Instax-Mini-8-web-ad'">Buy Now!
                     </button>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section id="specification">
+        <div class="specification-container">
+            <div class="btn-specification">
+                <button class="spec-btn-1" onclick="openInfo('first-info')"></button>
+                <button class="spec-btn-2" onclick="openInfo('second-info')"></button>
+                <button class="spec-btn-3" onclick="openInfo('third-info')"></button>
+                <button class="spec-btn-4" onclick="openInfo('fourth-info')"></button>
+                <button class="spec-btn-5" onclick="openInfo('fifth-info')"></button>
+                <button class="spec-btn-6" onclick="openInfo('sixth-info')"></button>
+                <button class="spec-btn-7" onclick="openInfo('seventh-info')"></button>
+                <button class="spec-btn-8" onclick="openInfo('eigth-info')"></button>
+            </div>
+            <div id="first-info" class="spec-info">
+                    <div class="specification-exit" onclick="this.parentElement.style.display='none'">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <img src="./assets/flash.png" alt="flash.png"><br>
+                    <a>Flash lampface</a><br>
+                    <span>When the flash fires, you'll know the perfect shot is taken!</span>
+                    <li>Constant firing flash (automatic light adjustment)</li>
+                    <li>Recycle time: 0.2 sec. to 6 sec. (when using new batteries), Effective flash range: 0.6m - 2.7 m</li>
+            </div>
+            <div id="second-info" class="spec-info">
+                <div class="specification-exit" onclick="this.parentElement.style.display='none'">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <img src="./assets/viewFinder.png" alt="viewFinder.png"><br>
+                <a>Viewfinder</a><br>
+                <span>Look into the lenses to take the perfect picture!</span>
+                <span>Note: Replace the batteries when the red lamp on the viewfinder lights up or when the lamps do not blink or light up even when
+                the camera is on.</span>
+            </div>
+            <div id="third-info" class="spec-info">
+                <div class="specification-exit" onclick="this.parentElement.style.display='none'">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <img src="./assets/shutterButton.png" alt="shutterButton.png"><br>
+                <a>Shutter Button</a><br>
+                <span>Click into the future with shutter speed of up to 1/60 sec.</span><br>
+                <span>With customizable shutter buttons only available on the official store!</span>
+            </div>
+            <div id="fourth-info" class="spec-info">
+                <div class="specification-exit" onclick="this.parentElement.style.display='none'">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <img src="./assets/filmEjectionSlot.png" alt="filmEjectionSlot.png"><br>
+                <a>Film Ejection Slot</a><br>
+                <span>Load your favorite films to this slot with up to 10 capacity!</span><br>
+                <span>CHECK CHECK CHECK CHECK CHECK</span>
+            </div>
+            <div id="fifth-info" class="spec-info">
+                <div class="specification-exit" onclick="this.parentElement.style.display='none'">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <img src="./assets/lightSensor.png" alt="lightSensor.png"><br>
+                <a>Light Sensor</a><br>
+                <span>You begin by pressing a lens-extend and open button. Then a light sensor indicates a particular aperture
+                setting should be used through multiple LEDs that are projected through the viewfinder!</span><br>
+                <span>Manual switching system (LED indicator in exposure meter)</span>
+            </div>
+            <div id="sixth-info" class="spec-info">
+                <div class="specification-exit" onclick="this.parentElement.style.display='none'">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <img src="./assets/brightnessSensor.png" alt="lightSensor.png">
+                <img src="./assets/settings.png" alt="settings.png"><br>
+                <a>Brightness Indicator</a><br>
+                <span>instax mini 8 automatically determines the best brightness for taking a picture, and informs you of the suitable setting
+                by lighting the corresponding lamp. Turn the brightness adjustment dial to the position (mark) of the lit lamp.</span><br>
+                <span>Manual switching system (LED indicator in exposure meter)</span>
+            </div>
+            <div id="seventh-info" class="spec-info">
+                <div class="specification-exit" onclick="this.parentElement.style.display='none'">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <img src="./assets/lens.png" alt="lens.png"><br>
+                <a>Lens and Lens cover</a><br>
+                <span>Customizable with a selfie lens only available in the official store</span><br>
+            </div>
+            <div id="eigth-info" class="spec-info">
+                <div class="specification-exit" onclick="this.parentElement.style.display='none'">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <img src="./assets/powerButton.png" alt="lens.png"><br>
+                <a>Power Button</a><br>
+                <span>Press the button beside the lens to turn power on.</span><br>
+                <li>Two LR6/AA-size 1.5V alkaline batteries</li>
+                <li>Capacity: 10 film packs (based on our company research)</li>
             </div>
         </div>
     </section>
