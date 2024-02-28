@@ -370,32 +370,40 @@ section {
     position: absolute;
     top: 10%;  
     padding: 15px;
-    opacity: 0;
+    opacity: 0.04;
     z-index: 1;
+    border: none;
+    animation: background-change 3s infinite;
 }
 
 .btn-specification button:nth-child(2) {
     position: absolute;
     top: 22%;
     padding: 15px;
-    opacity: 0;
+    opacity: 0.04;
     z-index: 1;
+    border: none;
+    animation: background-change 3s infinite;
 }
 
 .btn-specification button:nth-child(3) {
     position: absolute;
     top: 41%;
     padding: 15px;
-    opacity: 0;
+    opacity: 0.04;
     z-index: 1;
+    border: none;
+    animation: background-change 3s infinite;
 }
 
 .btn-specification button:nth-child(4) {
     position: absolute;
     left: 94%;
     padding: 15px;
-    opacity: 0;
+    opacity: 0.04;
     z-index: 1;
+    border: none;
+    animation: background-change 3s infinite;
 }
 
 .btn-specification button:nth-child(5) {
@@ -403,8 +411,10 @@ section {
     top: 18%;
     left: 94%;
     padding: 15px;
-    opacity: 0;
+    opacity: 0.04;
     z-index: 1;
+    border: none;
+    animation: background-change 3s infinite;
 }
 
 .btn-specification button:nth-child(6) {
@@ -412,8 +422,10 @@ section {
     top: 34%;
     left: 94%;
     padding: 15px;
-    opacity: 0;
+    opacity: 0.04;
     z-index: 1;
+    border: none;
+    animation: background-change 3s infinite;
 }
 
 .btn-specification button:nth-child(7) {
@@ -421,8 +433,10 @@ section {
     top: 63%;
     left: 94%;
     padding: 15px;
-    opacity: 0;
+    opacity: 0.04;
     z-index: 1;
+    border: none;
+    animation: background-change 3s infinite;
 }
 
 .btn-specification button:nth-child(8) {
@@ -430,8 +444,10 @@ section {
     top: 75%;
     left: 94%;
     padding: 15px;
-    opacity: 0;
+    opacity: 0.04;
     z-index: 1;
+    border: none;
+    animation: background-change 3s infinite;
 }
 
 .btn-specification button:hover {
@@ -490,6 +506,277 @@ section {
 
 .specification-exit span:last-child {
     transform: rotate(-45deg) translate(10px, -5px);
+}
+
+/* Accessories part */
+
+.accessory-turn-arounds {
+    padding: 1.5rem;
+    flex: 1;
+    border-radius: 2rem;
+    text-align: center;
+    height: 20rem;
+    background-color: white;
+}
+
+.accessory-buttons {
+    display: grid;
+    grid-template-columns: 10rem 10rem;
+    grid-template-rows: 5rem 5rem;
+    justify-content: center;
+    gap: 20px;
+}
+
+.accessory-buttons button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border:rgb(53, 53, 53) 0.1rem solid;
+}
+
+.mobile-accessories {
+    display: none;
+}
+
+#cases,
+#bags,
+#photo-album,
+#photo-frame,
+#selfie-mirror {
+    display: none;
+}
+
+
+.showcase {
+    position: absolute;
+    right: 20%;
+    left: 20%;
+}
+
+.showcase img {
+    position: absolute;
+    animation: rotate-in-out 4s linear infinite;
+}
+
+.showcase img:nth-of-type(1) {
+    animation-delay: 0s;
+}
+
+.showcase img:nth-of-type(2) {
+    animation-delay: 1s;
+}
+
+.showcase img:nth-of-type(3) {
+    animation-delay: 2s;
+}
+
+.showcase img:nth-of-type(4) {
+    animation-delay: 3s;
+}
+
+
+.showcase img:nth-of-type(2),
+.showcase img:nth-of-type(3),
+.showcase img:nth-of-type(4) {
+    opacity: 0;
+}
+
+.title-button-container {
+    margin-top: 10rem;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.camera-line-up.cases,
+.camera-line-up.bags,
+.camera-line-up.photo-album,
+.camera-line-up.photo-frame,
+.camera-line-up.selfie-mirror{
+    gap: 2.5rem;
+}
+
+.accessory-hover-animation {
+    position: relative;
+}
+
+.accessory-hover-animation.case-1 .btn-color,
+.accessory-hover-animation.case-2 .btn-color,
+.accessory-hover-animation.case-3 .btn-color,
+.accessory-hover-animation.case-4 .btn-color,
+.accessory-hover-animation.bag-1 .btn-color,
+.accessory-hover-animation.bag-2 .btn-color,
+.accessory-hover-animation.bag-3 .btn-color,
+.accessory-hover-animation.bag-4 .btn-color,
+.accessory-hover-animation.photo-album-1 .btn-color,
+.accessory-hover-animation.photo-album-2 .btn-color,
+.accessory-hover-animation.photo-album-3 .btn-color,
+.accessory-hover-animation.photo-album-4 .btn-color,
+.accessory-hover-animation.photo-frame-1 .btn-color,
+.accessory-hover-animation.photo-frame-2 .btn-color,
+.accessory-hover-animation.selfie-mirror-1 .btn-color,
+.accessory-hover-animation.selfie-mirror-2 .btn-color,
+.accessory-hover-animation.selfie-mirror-3 .btn-color,
+.accessory-hover-animation.selfie-mirror-4 .btn-color {
+    position: absolute;
+    top: 4rem;
+    right: 2.5rem;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.accessory-hover-animation.case-1:hover .btn-color,
+.accessory-hover-animation.case-2:hover .btn-color,
+.accessory-hover-animation.case-3:hover .btn-color,
+.accessory-hover-animation.case-4:hover .btn-color,
+.accessory-hover-animation.bag-1:hover .btn-color,
+.accessory-hover-animation.bag-2:hover .btn-color,
+.accessory-hover-animation.bag-3:hover .btn-color,
+.accessory-hover-animation.bag-4:hover .btn-color,
+.accessory-hover-animation.photo-album-1:hover .btn-color,
+.accessory-hover-animation.photo-album-2:hover .btn-color,
+.accessory-hover-animation.photo-album-3:hover .btn-color,
+.accessory-hover-animation.photo-album-4:hover .btn-color,
+.accessory-hover-animation.photo-frame-1:hover .btn-color,
+.accessory-hover-animation.photo-frame-2:hover .btn-color,
+.accessory-hover-animation.selfie-mirror-1:hover .btn-color,
+.accessory-hover-animation.selfie-mirror-2:hover .btn-color,
+.accessory-hover-animation.selfie-mirror-3:hover .btn-color,
+.accessory-hover-animation.selfie-mirror-4:hover .btn-color,
+.accessory-hover-animation.case-1:focus .btn-color,
+.accessory-hover-animation.case-2:focus .btn-color,
+.accessory-hover-animation.case-3:focus .btn-color,
+.accessory-hover-animation.case-4:focus .btn-color,
+.accessory-hover-animation.bag-1:focus .btn-color,
+.accessory-hover-animation.bag-2:focus .btn-color,
+.accessory-hover-animation.bag-3:focus .btn-color,
+.accessory-hover-animation.bag-4:focus .btn-color,
+.accessory-hover-animation.photo-album-1:focus .btn-color,
+.accessory-hover-animation.photo-album-2:focus .btn-color,
+.accessory-hover-animation.photo-album-3:focus .btn-color,
+.accessory-hover-animation.photo-album-4:focus .btn-color,
+.accessory-hover-animation.photo-frame-1:focus .btn-color,
+.accessory-hover-animation.photo-frame-2:focus .btn-color,
+.accessory-hover-animation.selfie-mirror-1:focus .btn-color,
+.accessory-hover-animation.selfie-mirror-2:focus .btn-color,
+.accessory-hover-animation.selfie-mirror-3:focus .btn-color,
+.accessory-hover-animation.selfie-mirror-4:focus .btn-color,
+.accessory-hover-animation.case-1:active .btn-color,
+.accessory-hover-animation.case-2:active .btn-color,
+.accessory-hover-animation.case-3:active .btn-color,
+.accessory-hover-animation.case-4:active .btn-color,
+.accessory-hover-animation.bag-1:active .btn-color,
+.accessory-hover-animation.bag-2:active .btn-color,
+.accessory-hover-animation.bag-3:active .btn-color,
+.accessory-hover-animation.bag-4:active .btn-color,
+.accessory-hover-animation.photo-album-1:active .btn-color,
+.accessory-hover-animation.photo-album-2:active .btn-color,
+.accessory-hover-animation.photo-album-3:active .btn-color,
+.accessory-hover-animation.photo-album-4:active .btn-color,
+.accessory-hover-animation.photo-frame-1:active .btn-color,
+.accessory-hover-animation.photo-frame-2:active .btn-color,
+.accessory-hover-animation.selfie-mirror-1:active .btn-color,
+.accessory-hover-animation.selfie-mirror-2:active .btn-color,
+.accessory-hover-animation.selfie-mirror-3:active .btn-color,
+.accessory-hover-animation.selfie-mirror-4:active .btn-color {
+    opacity: 1;
+}
+
+.accessory-hover-animation.case-1 .camera,
+.accessory-hover-animation.case-2 .camera,
+.accessory-hover-animation.case-3 .camera,
+.accessory-hover-animation.case-4 .camera,
+.accessory-hover-animation.bag-1 .camera,
+.accessory-hover-animation.bag-2 .camera,
+.accessory-hover-animation.bag-3 .camera,
+.accessory-hover-animation.bag-4 .camera,
+.accessory-hover-animation.photo-album-1 .camera,
+.accessory-hover-animation.photo-album-2 .camera,
+.accessory-hover-animation.photo-album-3 .camera,
+.accessory-hover-animation.photo-album-4 .camera,
+.accessory-hover-animation.photo-frame-1 .camera,
+.accessory-hover-animation.photo-frame-2 .camera,
+.accessory-hover-animation.selfie-mirror-1 .camera,
+.accessory-hover-animation.selfie-mirror-2 .camera,
+.accessory-hover-animation.selfie-mirror-3 .camera,
+.accessory-hover-animation.selfie-mirror-4 .camera {
+    opacity: 1;
+    transition: opacity .2s;
+}
+
+.accessory-hover-animation.case-1:hover .camera,
+.accessory-hover-animation.case-2:hover .camera,
+.accessory-hover-animation.case-3:hover .camera,
+.accessory-hover-animation.case-4:hover .camera,
+.accessory-hover-animation.bag-1:hover .camera,
+.accessory-hover-animation.bag-2:hover .camera,
+.accessory-hover-animation.bag-3:hover .camera,
+.accessory-hover-animation.bag-4:hover .camera,
+.accessory-hover-animation.photo-album-1:hover .camera,
+.accessory-hover-animation.photo-album-2:hover .camera,
+.accessory-hover-animation.photo-album-3:hover .camera,
+.accessory-hover-animation.photo-album-4:hover .camera,
+.accessory-hover-animation.photo-frame-1:hover .camera,
+.accessory-hover-animation.photo-frame-2:hover .camera,
+.accessory-hover-animation.selfie-mirror-1:hover .camera,
+.accessory-hover-animation.selfie-mirror-2:hover .camera,
+.accessory-hover-animation.selfie-mirror-3:hover .camera,
+.accessory-hover-animation.selfie-mirror-4:hover .camera,
+.accessory-hover-animation.case-1:focus .camera,
+.accessory-hover-animation.case-2:focus .camera,
+.accessory-hover-animation.case-3:focus .camera,
+.accessory-hover-animation.case-4:focus .camera,
+.accessory-hover-animation.bag-1:focus .camera,
+.accessory-hover-animation.bag-2:focus .camera,
+.accessory-hover-animation.bag-3:focus .camera,
+.accessory-hover-animation.bag-4:focus .camera,
+.accessory-hover-animation.photo-album-1:focus .camera,
+.accessory-hover-animation.photo-album-2:focus .camera,
+.accessory-hover-animation.photo-album-3:focus .camera,
+.accessory-hover-animation.photo-album-4:focus .camera,
+.accessory-hover-animation.photo-frame-1:focus .camera,
+.accessory-hover-animation.photo-frame-2:focus .camera,
+.accessory-hover-animation.selfie-mirror-1:focus .camera,
+.accessory-hover-animation.selfie-mirror-2:focus .camera,
+.accessory-hover-animation.selfie-mirror-3:focus .camera,
+.accessory-hover-animation.selfie-mirror-4:focus .camera,
+.accessory-hover-animation.case-1:active .camera,
+.accessory-hover-animation.case-2:active .camera,
+.accessory-hover-animation.case-3:active .camera,
+.accessory-hover-animation.case-4:active .camera,
+.accessory-hover-animation.bag-1:active .camera,
+.accessory-hover-animation.bag-2:active .camera,
+.accessory-hover-animation.bag-3:active .camera,
+.accessory-hover-animation.bag-4:active .camera,
+.accessory-hover-animation.photo-album-1:active .camera,
+.accessory-hover-animation.photo-album-2:active .camera,
+.accessory-hover-animation.photo-album-3:active .camera,
+.accessory-hover-animation.photo-album-4:active .camera,
+.accessory-hover-animation.photo-frame-1:active .camera,
+.accessory-hover-animation.photo-frame-2:active .camera,
+.accessory-hover-animation.selfie-mirror-1:active .camera,
+.accessory-hover-animation.selfie-mirror-2:active .camera,
+.accessory-hover-animation.selfie-mirror-3:active .camera,
+.accessory-hover-animation.selfie-mirror-4:active .camera {
+    opacity: 0;
+}
+
+@keyframes rotate-in-out {
+    0% {
+        opacity: 1;
+    }
+
+    49% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 

@@ -33,3 +33,12 @@ function openInfo(info) {
   }
   document.getElementById(info).style.display = "block";  
 }
+
+function openAccess(access) {
+  var i;
+  var x = document.getElementsByClassName("accessory-tray");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(access).style.display = "flex";  
+}
