@@ -761,6 +761,210 @@ section {
     opacity: 0;
 }
 
+/* Films part */
+
+.films-container {
+    display: grid;
+    position: relative;
+    justify-content: center;
+    gap: 50px;
+    grid-template-columns: 15rem 15rem 15rem 15rem;
+    grid-template-rows: 15rem 15rem 15rem 15rem 15rem 15rem;
+}
+
+.camera-image-container.film-1,
+.camera-image-container.film-2,
+.camera-image-container.film-3,
+.camera-image-container.film-4,
+.camera-image-container.film-6,
+.camera-image-container.film-7,
+.camera-image-container.film-8,
+.camera-image-container.film-9,
+.camera-image-container.film-10,
+.camera-image-container.film-11,
+.camera-image-container.film-12,
+.camera-image-container.film-13,
+.camera-image-container.film-14,
+.camera-image-container.film-15,
+.camera-image-container.film-16,
+.camera-image-container.film-17,
+.camera-image-container.film-18,
+.camera-image-container.film-19,
+.camera-image-container.film-20,
+.camera-image-container.film-21 {
+    position: relative;
+}
+
+.film-size {
+    height: 100%;
+}
+
+.film-button {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-300%);
+    transition: all .5s;
+}
+
+.camera-image-container.film-1 img.film-size,
+.camera-image-container.film-2 img.film-size,
+.camera-image-container.film-3 img.film-size,
+.camera-image-container.film-4 img.film-size,
+.camera-image-container.film-5 img.film-size,
+.camera-image-container.film-6 img.film-size,
+.camera-image-container.film-7 img.film-size,
+.camera-image-container.film-8 img.film-size,
+.camera-image-container.film-9 img.film-size,
+.camera-image-container.film-10 img.film-size,
+.camera-image-container.film-11 img.film-size,
+.camera-image-container.film-12 img.film-size,
+.camera-image-container.film-13 img.film-size,
+.camera-image-container.film-14 img.film-size,
+.camera-image-container.film-15 img.film-size,
+.camera-image-container.film-16 img.film-size,
+.camera-image-container.film-17 img.film-size,
+.camera-image-container.film-18 img.film-size,
+.camera-image-container.film-19 img.film-size,
+.camera-image-container.film-20 img.film-size,
+.camera-image-container.film-21 img.film-size {
+    transition: all .5s;
+}
+
+.camera-image-container.film1:hover img.film-size, 
+.camera-image-container.film2:hover img.film-size, 
+.camera-image-container.film3:hover img.film-size, 
+.camera-image-container.film4:hover img.film-size, 
+.camera-image-container.film5:hover img.film-size, 
+.camera-image-container.film6:hover img.film-size, 
+.camera-image-container.film7:hover img.film-size, 
+.camera-image-container.film8:hover img.film-size, 
+.camera-image-container.film9:hover img.film-size, 
+.camera-image-container.film10:hover img.film-size, 
+.camera-image-container.film11:hover img.film-size, 
+.camera-image-container.film12:hover img.film-size, 
+.camera-image-container.film13:hover img.film-size, 
+.camera-image-container.film14:hover img.film-size, 
+.camera-image-container.film15:hover img.film-size, 
+.camera-image-container.film16:hover img.film-size, 
+.camera-image-container.film17:hover img.film-size, 
+.camera-image-container.film18:hover img.film-size, 
+.camera-image-container.film19:hover img.film-size, 
+.camera-image-container.film20:hover img.film-size, 
+.camera-image-container.film21:hover img.film-size,
+.camera-image-container.film1:focus img.film-size,
+.camera-image-container.film2:focus img.film-size,
+.camera-image-container.film3:focus img.film-size,
+.camera-image-container.film4:focus img.film-size,
+.camera-image-container.film5:focus img.film-size,
+.camera-image-container.film6:focus img.film-size,
+.camera-image-container.film7:focus img.film-size,
+.camera-image-container.film8:focus img.film-size,
+.camera-image-container.film9:focus img.film-size,
+.camera-image-container.film10:focus img.film-size,
+.camera-image-container.film11:focus img.film-size,
+.camera-image-container.film12:focus img.film-size,
+.camera-image-container.film13:focus img.film-size,
+.camera-image-container.film14:focus img.film-size,
+.camera-image-container.film15:focus img.film-size,
+.camera-image-container.film16:focus img.film-size,
+.camera-image-container.film17:focus img.film-size,
+.camera-image-container.film18:focus img.film-size,
+.camera-image-container.film19:focus img.film-size,
+.camera-image-container.film20:focus img.film-size,
+.camera-image-container.film21:focus img.film-size,
+.camera-image-container.film1:active img.film-size,
+.camera-image-container.film2:active img.film-size,
+.camera-image-container.film3:active img.film-size,
+.camera-image-container.film4:active img.film-size,
+.camera-image-container.film5:active img.film-size,
+.camera-image-container.film6:active img.film-size,
+.camera-image-container.film7:active img.film-size,
+.camera-image-container.film8:active img.film-size,
+.camera-image-container.film9:active img.film-size,
+.camera-image-container.film10:active img.film-size,
+.camera-image-container.film11:active img.film-size,
+.camera-image-container.film12:active img.film-size,
+.camera-image-container.film13:active img.film-size,
+.camera-image-container.film14:active img.film-size,
+.camera-image-container.film15:active img.film-size,
+.camera-image-container.film16:active img.film-size,
+.camera-image-container.film17:active img.film-size,
+.camera-image-container.film18:active img.film-size,
+.camera-image-container.film19:active img.film-size,
+.camera-image-container.film20:active img.film-size,
+.camera-image-container.film21:active img.film-size {
+    opacity: 0;
+}
+
+.camera-image-container.film1:hover button.film-button, 
+.camera-image-container.film2:hover button.film-button, 
+.camera-image-container.film3:hover button.film-button, 
+.camera-image-container.film4:hover button.film-button, 
+.camera-image-container.film5:hover button.film-button, 
+.camera-image-container.film6:hover button.film-button, 
+.camera-image-container.film7:hover button.film-button, 
+.camera-image-container.film8:hover button.film-button, 
+.camera-image-container.film9:hover button.film-button, 
+.camera-image-container.film10:hover button.film-button, 
+.camera-image-container.film11:hover button.film-button, 
+.camera-image-container.film12:hover button.film-button, 
+.camera-image-container.film13:hover button.film-button, 
+.camera-image-container.film14:hover button.film-button, 
+.camera-image-container.film15:hover button.film-button, 
+.camera-image-container.film16:hover button.film-button, 
+.camera-image-container.film17:hover button.film-button, 
+.camera-image-container.film18:hover button.film-button, 
+.camera-image-container.film19:hover button.film-button,
+.camera-image-container.film20:hover button.film-button, 
+.camera-image-container.film21:hover button.film-button,
+.camera-image-container.film1:focus button.film-button,
+.camera-image-container.film2:focus button.film-button,
+.camera-image-container.film3:focus button.film-button,
+.camera-image-container.film4:focus button.film-button,
+.camera-image-container.film5:focus button.film-button,
+.camera-image-container.film6:focus button.film-button,
+.camera-image-container.film7:focus button.film-button,
+.camera-image-container.film8:focus button.film-button,
+.camera-image-container.film9:focus button.film-button,
+.camera-image-container.film10:focus button.film-button,
+.camera-image-container.film11:focus button.film-button,
+.camera-image-container.film12:focus button.film-button,
+.camera-image-container.film13:focus button.film-button,
+.camera-image-container.film14:focus button.film-button,
+.camera-image-container.film15:focus button.film-button,
+.camera-image-container.film16:focus button.film-button,
+.camera-image-container.film17:focus button.film-button,
+.camera-image-container.film18:focus button.film-button,
+.camera-image-container.film19:focus button.film-button,
+.camera-image-container.film20:focus button.film-button,
+.camera-image-container.film21:focus button.film-button,
+.camera-image-container.film1:active button.film-button,
+.camera-image-container.film2:active button.film-button,
+.camera-image-container.film3:active button.film-button,
+.camera-image-container.film4:active button.film-button,
+.camera-image-container.film5:active button.film-button,
+.camera-image-container.film6:active button.film-button,
+.camera-image-container.film7:active button.film-button,
+.camera-image-container.film8:active button.film-button,
+.camera-image-container.film9:active button.film-button,
+.camera-image-container.film10:active button.film-button,
+.camera-image-container.film11:active button.film-button,
+.camera-image-container.film12:active button.film-button,
+.camera-image-container.film13:active button.film-button,
+.camera-image-container.film14:active button.film-button,
+.camera-image-container.film15:active button.film-button,
+.camera-image-container.film16:active button.film-button,
+.camera-image-container.film17:active button.film-button,
+.camera-image-container.film18:active button.film-button,
+.camera-image-container.film19:active button.film-button,
+.camera-image-container.film20:active button.film-button,
+.camera-image-container.film21:active button.film-button {
+    transform: translateY(-200%);
+    opacity: 1;
+    filter: blur(0);
+    transition-delay: 200ms;
+}
+
 @keyframes rotate-in-out {
     0% {
         opacity: 1;

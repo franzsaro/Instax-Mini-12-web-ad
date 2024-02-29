@@ -21,11 +21,16 @@
     }
 
     .product-picture img{
-        height: 400px;
+        height: 500px;
     }
 
     .image-container {
         height: 400px;
+    }
+
+    .films-container {
+        grid-template-columns: 10rem 10rem 10rem;
+        grid-template-rows: 10rem 10rem 10rem 10rem 10rem 10rem 10rem;
     }
 
 }
@@ -36,7 +41,7 @@
     }
 
     .product-picture img {
-        height: 300px;
+        height: 350px;
     }
 
     #product-slider {
@@ -208,6 +213,10 @@
         height: 10rem;
         width: 10rem;
         left: 20%;
+    }
 
+    .films-container {
+        grid-template-columns: 10rem 10rem;
+        grid-template-rows: 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem;
     }
 }
