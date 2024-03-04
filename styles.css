@@ -584,7 +584,8 @@ section {
     display: none;
     text-align: center;
     flex-direction: row;
-    background-color: white;
+    background-color: #61d1c6;
+    border-radius: 2%;
 }
 
 .spec-info {
@@ -638,7 +639,7 @@ section {
     border-radius: 2rem;
     text-align: center;
     height: 20rem;
-    background-color: white;
+    background-color: none;
 }
 
 .accessory-buttons {
