@@ -653,8 +653,37 @@ section {
 .accessory-buttons button {
     margin: 10px;
     padding: 10px;
-    border-radius: 10px;
-    border:rgb(53, 53, 53) 0.1rem solid;
+    cursor: pointer;
+}
+
+.accessory-buttons button:first-of-type {
+    border: #1f1030 0.1rem solid;
+    background-color: #1f1030;
+    color: white;
+}
+
+.accessory-buttons button:nth-of-type(2) {
+    border: #39a399 0.1rem solid;
+    background-color: #39a399;
+    color: white;
+}
+
+.accessory-buttons button:nth-of-type(3) {
+    border: #d41d54 0.1rem solid;
+    background-color:#d41d54;
+    color: white;
+}
+
+.accessory-buttons button:nth-of-type(4) {
+    border: #000000 0.1rem solid;
+    background-color: #000000;
+    color: white;
+}
+
+.accessory-buttons button:last-of-type {
+    border: #cddb0b 0.1rem solid;
+    background-color: #cddb0b;
+    color: black;
 }
 
 .mobile-accessories {
